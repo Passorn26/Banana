@@ -1,0 +1,173 @@
+
+body,html{
+    height: 100%;
+    margin: 0;
+    font-size: 19px;
+    font-family: 'Itim', cursive;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.logo{
+    width: 65px;
+    position: relative;
+    align-items: center;
+    left: 50%;
+    padding: 15px 0px;
+}
+.page1{
+    background-color: #f8d7c1;
+    background-image: url('mom/banana/กล้วย.jpg');
+    min-height: 40%;
+}
+.page2{
+    background-image: url('mom/banana/3.jpg');
+    min-height: 600px;
+}
+.page3{
+    background-image: url('mom/banana/2\ \(3\).jpg');
+    min-height: 600px;
+}
+.page4{
+    background-image: url('mom/banana/2\ \(1\).jpg');
+    min-height: 600px;
+}
+.page5{
+    background-image: url('mom/banana/2\ \(2\).jpg');
+    min-height: 600px;
+}
+.page6{
+    background-image: url('mom/banana/2\ \(6\).jpg');
+    min-height: 600px;
+}
+.page1,.page2,.page3,.page4,.page5,.page6{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    text-align: center;
+}
+.contact{
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    padding: 35px 200px;
+    font-size: 16px;
+}
+
+.icon{
+    cursor: pointer;
+    transition: 1s;
+}
+.phone{
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+    color: white;
+}
+.facebook{
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+    color: white;
+}
+
+.icon:hover{
+    color: #c4b3c3;
+}
+.facebook:hover{
+    color: #aad4e0;
+}
+.phone:hover{
+    color: #eeb189;
+}
+.intro{
+    background-image: linear-gradient( 90.5deg,  rgba(255,207,139,0.50) 1.1%, rgba(255,207,139,1) 81.3% );
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text{
+     color:rgb(39, 39, 39);
+    letter-spacing:5px;
+    font-size: 1.5rem;
+
+}
+.slider{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(248,218,180,0.66) 0%, rgba(219, 114, 33, 0.62) 90% );
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+ 
+}
+.hide{
+    background-color: none;
+    overflow: hidden;
+    height: 100px;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+    padding: 7px 0px;
+}
+
+
+
+/*responsive*/
+@media screen and (max-width:1100px){
+    .page1,.page2,.page3,.page4,.page5,.page6{
+        background-attachment: scroll;
+    }
+    p{
+        padding: 0px 22px;
+    }
+    .contact{padding: 35px 30px}
+    .page1{min-height: 25%;}
+    .page2,.page3,.page4,.page5,.page6{min-height: 585px;}
+}
+@media screen and (max-width:563px){
+    body,html{
+        font-size: 16px;
+    }
+    .contact{padding: 35px 20px}
+    .page2,.page3,.page4,.page5,.page6{min-height: 360px;}
+    .intro-text{font-size: 17px;}
+}
+@media screen and (max-width:463px){
+    .contact{font-size: 14px;}
+    .intro-text{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (max-width:423px){
+    body,html{
+        font-size: 15px;
+    }
+    .page2,.page3,.page4,.page5,.page6{min-height: 300px;}
+    .page1{min-height:20%}
+}
+@media screen and (max-width:315px){
+    body,html{
+        font-size: 14px;
+    }
+    .page2,.page3,.page4,.page5,.page6{min-height: 240px;}
+    .intro-text{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .page1{min-height:15%}
+    .contact{font-size: 12px;}
+
+}
+ 
